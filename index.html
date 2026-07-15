@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marginalia — Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-row">
+    <div class="brand">
+      <h1>Marginalia</h1>
+      <span class="tally" id="tally">0 notes</span>
+    </div>
+    <div class="controls">
+      <div class="search-wrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c7cbd6" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search notes…">
+      </div>
+      <button class="new-note-btn" id="focusComposerBtn">+ New note</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="composer" id="composer">
+    <input type="text" class="title-field" id="newTitle" placeholder="Title">
+    <textarea class="body-field" id="newBody" placeholder="Jot something down…" rows="1"></textarea>
+    <div class="composer-footer">
+      <div class="swatches" id="newSwatches">
+        <div class="swatch selected" data-color="cream" style="background:var(--paper-cream)"></div>
+        <div class="swatch" data-color="blue" style="background:var(--paper-blue)"></div>
+        <div class="swatch" data-color="blush" style="background:var(--paper-blush)"></div>
+        <div class="swatch" data-color="sage" style="background:var(--paper-sage)"></div>
+      </div>
+      <div class="composer-actions">
+        <button class="cancel-btn" id="cancelBtn">Cancel</button>
+        <button class="save-btn" id="saveBtn">Save note</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="pinnedSection"></div>
+  <div id="pinnedLabel" class="section-label" style="display:none;">Pinned</div>
+  <div class="grid pinned-grid" id="pinnedGrid"></div>
+
+  <div id="othersLabel" class="section-label" style="display:none;">Notes</div>
+  <div class="grid" id="notesGrid"></div>
+
+  <div class="empty-state" id="emptyState" style="display:none;">
+    <div class="glyph">＋</div>
+    <p>No notes yet. Write down the thing you don't want to lose, before you lose it.</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
