@@ -13,7 +13,7 @@
 ## 📸 Interface Preview & Gallery
 
 ### Desktop Application Workspace
-![Marginalia Desktop Dashboard](https://raw.githubusercontent.com/yourusername/marginalia/main/assets/screenshots/dashboard-preview.png)
+![Marginalia Desktop Dashboard](Screenshot (14).png)
 
 ### 🎥 Live Interface Demo
 > **Watch the workspace in action:** Click the thumbnail below to see quick note creation, dynamic rendering, and responsive card layouts.
