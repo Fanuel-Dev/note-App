@@ -18,7 +18,7 @@
 ### 🎥 Live Interface Demo
 > **Watch the workspace in action:** Click the thumbnail below to see quick note creation, dynamic rendering, and responsive card layouts.
 
-[![Marginalia App Walkthrough](https://raw.githubusercontent.com/yourusername/marginalia/main/assets/screenshots/video-thumbnail.png)](https://github.com/yourusername/marginalia "Watch Walkthrough")
+[![Marginalia App Walkthrough](Screenshot (14).png)](https://github.com/yourusername/marginalia "Watch Walkthrough")
 
 ---
 
